@@ -1,1 +1,8 @@
-h1 LivingSocial Company Importer 5000
+h1 LivingSocial Company Acquisition 5000
+
+= form_tag acquisitions_path, method: :post, multipart: true do
+  .form-group
+    = label_tag 'Company Data'
+    = file_field_tag :data
+  .form-group
+    = submit_tag 'Acquire!', class: 'btn btn-primary btn-large'
